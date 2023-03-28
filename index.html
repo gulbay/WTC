@@ -1,40 +1,31 @@
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
-<!--  If necessary, please modify the charset parameter to specify the        -->
-<!--  character set of your HTML page.                                        -->
-<!--  ----------------------------------------------------------------------  -->
-<p style="background-image: url('https://tse4.mm.bing.net/th?id=OIP.rTkWSKTaVe1Z1s5mgpSiWgHaEK&pid=Api&P=0');">
-<img src="https://tse4.mm.bing.net/th?id=OIP.rTkWSKTaVe1Z1s5mgpSiWgHaEK&pid=Api&P=0" alt="Girl in a jacket" width="500" height="600">
-<img src="https://www.example.com/image.jpg" alt="Image description">
-<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <style>
+    body {
+      background-image: url('https://example.com/background-image.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    <input type=hidden name="orgid" value="00D8b0000020IwF">
+    <input type=hidden name="retURL" value="https://github.com/gulbay/WTC">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: Please add the following <FORM> element to your page.             -->
-<!--  ----------------------------------------------------------------------  -->
+    <label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
+    <label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-<input type=hidden name="orgid" value="00D8b0000020IwF">
-<input type=hidden name="retURL" value="https://github.com/gulbay/WTC">
+    <label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="gulkaiyrbayram@gmail.com">                                       -->
-<!--  ----------------------------------------------------------------------  -->
+    <label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+    <label for="description">Description</label><textarea name="description"></textarea><br>
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+    <input type="submit" name="submit">
+  </form>
+</body>
+</html>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type="submit" name="submit">
-
-</form>
